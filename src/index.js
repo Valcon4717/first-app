@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"; 
+import ReactDOM from "react-dom";
+import "jquery";
+import "popper.js/dist/umd/popper";
+import "bootstrap/dist/js/bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
+import NavBar from "./App";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// btn btn-danger: predefined  css class from the bootstrap.css file
+// var element = <button class = "btn btn-danger">Hello World</button>;
+// ReactDOM.render(element, document.getElementById("root")); //rendering inside the root folder
+// console.log(element); //shows the value on the console
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<NavBar/>, document.getElementById("root"));
